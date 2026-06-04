@@ -1232,9 +1232,8 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: hidden;
   gap: 0;
-  padding: 28px 24px 24px;
+  padding: 24px 24px 24px;
   border: 1px solid var(--color-slate-200);
   border-radius: 16px;
   background: #ffffff;
@@ -1248,24 +1247,25 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   box-shadow: 0 12px 32px -8px rgba(36,55,246,0.18), 0 4px 12px -2px rgba(15,23,42,0.06);
 }
 
-/* Logo box inside card */
+/* Logo box — fixed aspect container, image fills it with contain */
 .partner-card-logo {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  background: var(--color-slate-50);
+  border: 1px solid var(--color-slate-100);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 90px;
-  margin-bottom: 16px;
-  overflow: hidden;
-  padding: 8px 16px;
-  box-sizing: border-box;
 }
 .partner-card-logo img {
-  max-width: 100%;
-  max-height: 68px;
-  width: auto;
-  height: auto;
-  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* always shows full logo, no cropping */
+  object-position: center;
   display: block;
 }
 .partner-card-initial {
@@ -1396,16 +1396,20 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 200px;
-  padding: 32px;
+  width: 100%;
+  height: 200px;
+  padding: 32px 40px;
+  box-sizing: border-box;
   border: 1px solid var(--color-slate-200);
   border-radius: 16px;
   background: linear-gradient(180deg, #ffffff, #f8fafc);
 }
 .partner-detail-logo-box img {
-  max-width: 100%;
-  max-height: 120px;
+  width: 100%;
+  height: 100%;
   object-fit: contain;
+  object-position: center;
+  display: block;
 }
 .partner-detail-logo-initial {
   font-size: 56px;
@@ -1614,32 +1618,36 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   pointer-events: none;
 }
 
-/* Logo box — fixed height, object-fit handles any aspect ratio */
+/* Logo box — fixed container, image always shows fully via object-fit:contain */
 .dir-card-logo {
+  width: 100%;
+  height: 90px;
+  padding: 14px 20px;
+  box-sizing: border-box;
+  background: var(--color-slate-50);
+  border: 1px solid var(--color-slate-100);
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 80px;          /* Fixed height — logos scale inside */
-  overflow: hidden;
-  border-radius: 10px;
-  background: var(--color-slate-50);
-  border: 1px solid var(--color-slate-100);
   flex-shrink: 0;
 }
 .dir-card-logo--sm {
-  height: 60px;
+  height: 70px;
+  padding: 10px 16px;
 }
 .dir-card-logo img {
-  max-width: 80%;
-  max-height: 64px;
-  width: auto;
-  height: auto;
-  object-fit: contain;   /* Preserves aspect ratio regardless of source size */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* Full logo always visible — no cropping ever */
+  object-position: center;
   display: block;
 }
 .dir-card-logo--sm img {
-  max-height: 48px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 .dir-card-initial {
   font-size: 28px;
@@ -1859,26 +1867,31 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 160px;
-  padding: 28px;
+  width: 100%;
+  height: 160px;
+  padding: 28px 32px;
+  box-sizing: border-box;
   border: 1px solid var(--color-slate-200);
   border-radius: 14px;
   background: linear-gradient(180deg, #ffffff, var(--color-slate-50));
   flex-shrink: 0;
 }
 .detail-header-logo--sm {
-  min-height: 110px;
-  padding: 20px;
+  height: 120px;
+  padding: 20px 28px;
 }
 .detail-header-logo img {
-  max-width: 100%;
-  max-height: 100px;
-  width: auto;
-  height: auto;
-  object-fit: contain;  /* Handles wide logos, tall logos, any ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }
 .detail-header-logo--sm img {
-  max-height: 70px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 .detail-logo-initial {
   font-size: 48px;

@@ -1,0 +1,7 @@
+Dyrect Next.js upload package
+
+Current fix marker:
+- Features page uses FEATURE_URLS, not window.DYRECT_URLS, so /features and /features#... do not crash.
+- Feature dropdown links point to local /features anchor sections.
+
+If this file is not visible at the GitHub repository root, the wrong folder or an old zip was uploaded.

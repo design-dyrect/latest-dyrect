@@ -1,0 +1,601 @@
+[0] 1. Product Registration Software
+---
+[1] Images (ref)
+---
+[2] 2. EXTENDED WARRANTY SOFTWARE
+---
+[3] 3. WARRANTY CLAIMS MANAGEMENT SOFTWARE
+---
+[4] 4. Loyalty
+---
+[5] 5. Authentication
+---
+[6] Banner
+---
+[7] Omni Channel Product Registration Software
+---
+[8] Sell Extended Warranties Directly to Your Customers
+---
+[9] Manage Warranty Claims Efficiently. Create Better Service Experiences.
+---
+[10] Create Brand Advocates and Loyal Customer EVERYTIME!
+---
+[11] Conterfiet Products? No place for that at ALL!
+---
+[12] Build trust among your customers by providing seamless Warranty Product Registration process. Collect first-party data at every registration and upsell accessories or discount coupons to drive repeat purchases.
+---
+[13] 
+Make extended warranties easy to sell, easy to manage, and profitable for your brand. Offer protection plans through your brand, keep more revenue in-house, and maintain full visibility from purchase to renewal.
+---
+[14] Centralize warranty claims, service tickets, and product validation in one warranty management system. Route claims automatically, track repairs and replacements, and resolve service requests faster.
+---
+[15] Own your brand and provide an experience that turns your customers into a loyal regular buyer who talks about your efficacy 
+---
+[16] Own every moment effortlessly. Dyrect's solutions redefine ownership, ensuring simplicity and customer satisfaction throughout the journey
+---
+[17] Get A Demo >
+---
+[18] rated 4.8 ★ on G2 
+---
+[19] rated 4.8 ★ on G2
+---
+[20] rated 4.9 ★ on G2
+---
+[21] Logos
+---
+[22] Trusted by 500+ of global brands
+---
+[23] Trusted by 100s of global brands
+---
+[24] Client Logos
+---
+[25] Platform
+---
+[26] Enable fast, frictionless warranty registration. Verify first-party customer data.
+---
+[27] One Place to Buy, View, Renew Extended Warranties
+---
+[28] Warranty Claims and Service Operations, Simplified
+---
+[29] Connect, Engage, Reward: Our Loyalty Solution
+---
+[30] The Dyrect Code: Unique Identity, Total Security
+---
+[31] Dyrect enables streamlined product and warranty registration for D2C brands, retailers, and manufacturers. Connect each product to its owner, maintain accurate customer records, and introduce relevant add-ons in the same flow.
+---
+[32] Give customers one place to buy protection plans, check coverage, renew plans, find product manuals, contact service centers, submit feedback, or request help. 
+---
+[33] Warranty claims management works best when product data, claim details, and service actions stay connected. This allows support teams to review requests with full context and manage service outcomes more efficiently.
+---
+[34] Loyalty goes beyond the purchase! And we value that. Our loyalty solutions streamline the purchase experience of all the channels, from retailers, and influencers, to consumers. 
+---
+[35] Authenticate your products effortlessly, and turn your customers into an army against counterfeiting with Dyrect's solution with guaranteed results in 5 weeks!
+---
+[36] image/ section showing different extended warranty placement options
+
+(https://www.myumbrella.ai/platform/extended-protection) 
+---
+[37] Image showing cusomter side registration flow
+
+ref image- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=434-2316&t=krP4poGMR1glLDsZ-4
+
+
+https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=13277-6283&t=Q49SxlXzFKo0fYVv-4
+---
+[38] ref image- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=12178-68840&t=Q49SxlXzFKo0fYVv-4
+---
+[39] Products
+---
+[40] Built with Customer First, Omni-Channel Approach for growing brands
+---
+[41] More Than an Extended Warranty Software
+---
+[42] Better Warranty Service Starts with Better Claim Management
+---
+[43] Opting for Claims : Why?
+---
+[44] Opting for Anti-Countefiet Solution: But Why?
+---
+[45] A complete system for product registration, customer engagement, and warranty operations across ecommerce, retail, and marketplace channels.
+---
+[46] Sell protection plans across key buying touchpoints, keep coverage records clear, and track warranty performance without adding operational mess. Dyrect keeps every plan connected to the product, the customer, and the full post-purchase lifecycle.
+---
+[47] Move warranty claims out of inboxes and spreadsheets. Manage claim requests, validate products, coordinate service actions, and maintain complete control over your service operations.
+---
+[48] Join in, have fun, and get great benefits with our Loyalty Solution—making your brand experience even more enjoyable!"
+---
+[49] In the battle against counterfeiting, Dyrect stands tall, ensuring authenticity at every scan
+---
+[50] Embed Registration on Shopify or Enable QR Code Activation
+
+Dyrect product registration system enables warranty registration directly on Shopify or through QR codes printed on product packaging. Customers can register products in seconds while linking each purchase to its owner. Omni-channel product registration helps brands maintain accurate customer records and improve lifetime value.
+
+Capabilities:
+
+Digital Warranty Cards (https://www.dyrect.co/new-features/digital-warranty-card): Give every registered buyer a digital warranty record linked to product and purchase details
+Omnichannel Registration : Enable registration through Shopify, QR codes, and branded online forms
+Customer Communication: Share updates, reminders, and service information after registration
+
+Learn More > (https://www.dyrect.co/features#product-registration)
+---
+[51] Image
+---
+[52] Offer Extended Warranties Across Key Buying Touchpoints
+
+Present protection plans at the moments customers are most ready to buy. Create a seamless path from product discovery to coverage selection across your storefront and post-purchase journey.
+
+Capabilities:
+
+Product Page Offers: Present extended warranty plans alongside eligible products at the point of purchase
+Plan Configuration: Set coverage duration, pricing, and eligibility by product, category, or SKU
+Eligibility Controls: Set clear coverage rules using product, purchase, and warranty data
+
+Learn More >
+---
+[53] Organize Every Warranty Claim, Repair, and Replacement in One Workflow
+
+Bring service teams into one place to receive claims, assign work, track progress, and manage outcomes. Every ticket stays connected to the product, the customer, and the full service record for smoother coordination across the entire workflow.
+
+Capabilitites:
+
+Warranty Claim Ticket Management: Capture, assign, and resolve warranty claims from one shared workspace
+Smart Ticket Routing: Send claims to the right team based on product type, issue type, or service priority
+Unified Agent Workspace: View claim details, customer records, product data, and service activity in one place
+
+Learn More >
+---
+[54] Streamline multiple channels
+
+Strengthen your B2B relationships with retailers and technicians with just one solution.  You get the data while they scan and enroll for a loyalty solution that is not only efficient but relatable.                                                                                        
+
+Popular Capability:
+
+✅ Let buyers scan QR and enroll easily.
+✅ Get accurate information about your real buyers
+✅ Manage various channels through a single platforms 
+
+Learn More >
+---
+[55] Plug in our anti-counterfeit solutions in your existing system!
+Saving your brand from duplicity is important and for that, you should be able to integrate the solution withour any hassle and save yourself and your brand from everything                                                                           
+
+Popular Capability:
+
+✅ Easy QR code-based counterfeit check.
+✅ AI will detect the authenticity in one go
+✅ Integrate it with all the product line for advanced security 
+
+Learn More >
+---
+[56] (2nd user trackability)
+---
+[57] (cusomter visibility)
+---
+[58] ref- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=13423-16278&t=krP4poGMR1glLDsZ-4
+---
+[59] ref- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=13836-4438&t=krP4poGMR1glLDsZ-4
+---
+[60] 
+show warranty claims/ tickets dashboard
+
+ref img- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=8988-32171&t=Q49SxlXzFKo0fYVv-4
+---
+[61] Use Registration to Drive Upsells and Revenue
+
+Product registration gives brands a strong post-purchase sales moment. Dyrect helps teams present relevant accessories, upgrades, discount offers, and extended coverage during activation. Connect Dyrect with your email, SMS, and CRM tools so each registration can feed future revenue campaigns too.
+
+Capabilities:
+
+In-Flow Upsell Offers: Show relevant add-ons, accessories, and upgrades during registration
+Extended Warranties: Present protection plans during warranty activation
+Marketing Tool Sync (https://www.dyrect.co/integrations): Send registration data into email, SMS, and CRM platforms for follow-up offers
+
+Learn More > (https://www.dyrect.co/new-features/experience-builder)
+---
+[62] Make Coverage Easy to Access and Easy to Renew
+
+Give customers a clear way to view protection plans, check coverage details, and renew at the right moment. Keep every plan linked to the product, the buyer, and the full warranty record in one branded experience.
+
+Capabilities:
+
+Coverage Visibility: Show active coverage, plan terms, and renewal dates in one customer-facing view
+Renewal Touchpoints: Create a smoother renewal journey with plan visibility and expiry-based reminders
+Connected Plan Records: Keep customer, product, and warranty information linked across every active plan
+
+Learn More >
+---
+[63] Validate Claims with Clear Product and Customer Visibility
+
+Bring together product eligibility, customer details, and service context before action moves forward. Teams can review warranty status, verify ownership, and track service progress with a clearer view of every claim and every customer connected to it.
+
+Capabilities:
+
+Serial Number Validation: Verify product authenticity and warranty eligibility using serialized product data, proof of purchase, or registration records
+Customer and Product Visibility: Keep customer details, product information, purchase data, and claim history connected for stronger trackability across every service request
+Repair and Replacement Tracking: Monitor repair progress, replacement activity, shipment updates, and final resolution from one connected service record
+
+Learn More (https://www.dyrect.co/features#authentication) >
+---
+[64] Make consumer channels yours!
+
+Consumers love additional value derived from a product.  Create custom campaigns with personalized forms, landing pages, ideas, and so much more, and make them loyal, trustworthy, and repeat buyers                                                                                        
+
+Popular Capability:
+
+✅ Improved brand visibility with customization.
+✅ Building trust & transparency among the consumers
+✅ Efficient data management platform to store and analyze data 
+
+Explore >
+---
+[65] Plug in our anti-counterfeit solutions in your existing system!
+Saving your brand from duplicity is important and for that, you should be able to integrate the solution withour any hassle and save yourself and your brand from everything                                                                           
+
+Popular Capability:
+
+✅ Easy QR code-based counterfeit check.
+✅ AI will detect the authenticity in one go
+✅ Integrate it with all the product line for advanced security 
+
+Learn More >
+---
+[66] (track profits, and revenue- analytics)
+---
+[67] (make this 3rd)
+---
+[68] ref- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=13836-4438&t=krP4poGMR1glLDsZ-4
+---
+[69] different image for upsell and extended warranties
+---
+[70] dashboard and team side configurable image
+---
+[71] image showing validation, repair and replacement admin dashboard
+---
+[72] 
+
+Connect with 3rd party customers and make them yours!
+
+Products sold through marketplaces or offline retail often leave brands without direct customer relationships. Registration links each product with its owner and creates verified customer records that support long-term engagement and repeat purchases.
+
+Capabilities:
+
+Verified Customer Records: Maintain customer profiles with contact details, product data, and purchase channel information
+Email and SMS Opt-Ins: Grow subscriber lists through registration-led consent flows
+Post-Purchase Content Delivery: Share manuals, care guides, support resources, and product education after registration
+
+Learn More (https://www.dyrect.co/features#product-registration) >
+                
+                
+                
+                
+                
+                
+---
+[73] 
+Track Warranty Performance and Revenue Opportunities
+
+Bring warranty data into one view so teams can understand plan performance, identify product issues earlier, and uncover revenue opportunities tied to expiry and customer activity.
+
+Capabilities:
+
+Warranty Performance Metrics: Track plan sales, registrations, claim activity, and service trends across products and categories
+Defect Trend Detection: Spot product lines with higher defect activity and improve decision-making with clearer warranty data
+Revenue Opportunity Insights: Identify renewal windows, upsell moments, and customer segments with stronger revenue potential
+
+Learn More >     
+                
+                
+                
+                
+                
+                
+---
+[74] Use Claims Insights and Service Analytics to Improve Warranty Operations
+
+Track warranty claims activity with analytics built for service teams. Monitor claim volumes, resolution speed, recurring product issues, and service outcomes with clear reporting that helps teams improve performance and spot patterns earlier.
+
+Capabilitites:
+
+Claims Performance Metrics: Track claim volumes, turnaround times, open tickets, and resolution outcomes across products and service teams
+Defect Trend Insights: Identify products with repeated service issues, frequent claim activity, and rising repair or replacement volume
+Financial and Service Reports: Monitor dealer chargebacks, repair payments, replacement activity, and claim resolution records with greater operational visibility
+
+Learn More (https://www.dyrect.co/features#claims-management) >
+---
+[75] Multiple redemption option!
+
+Our buyer loves having options. And that's why Dyrect created a redemption channel that offers as many options as you want.  From Paytm, Amazon Pay, UPI, and Bank transfers to gift cards from Amazon, Tanishq, Flipkart, and so much more
+
+Popular Capability:
+
+✅ Easily manage points collection and redemption on a single page.
+✅ Measure and analyze online and offline channel data
+✅ Manage various channels through a single platforms 
+
+Learn More >
+---
+[76] Analyze collected data and prevent security breaches!
+With Dyrect's solution, you get access to real-time reports of how and when these counterfeit challenges are coming from. Understand the root cause and eliminate all the ways which lead to security breach                                                                           
+
+Popular Capability:
+
+✅ Verify the serial number of each product.
+✅ Improve trust in your brand
+✅ Detailed reports on acquired data  
+
+Learn More about serial number validation >"                
+                
+                
+                
+                
+                
+                
+---
+[77] (remove 3rd and make 2nd- upsell)
+---
+[78] analytics 3rd
+---
+[79] (change scale - to analytics, product defects, etc )
+---
+[80] ref- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=13836-77638&t=Q49SxlXzFKo0fYVv-4
+
+ image showing form with opt-in
+---
+[81] analytics dashboard showing sales and product defect trends
+
+
+ref image- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=11953-77177&t=Q49SxlXzFKo0fYVv-4
+---
+[82] img ref- https://www.figma.com/design/TGUG03JYsgf40Vy3AteE8H/Dyrect?node-id=11481-49596&t=Q49SxlXzFKo0fYVv-4
+---
+[83] Capabilities
+---
+[84] Product Registration Software for brands of all sizes
+---
+[85] Extended Warranties Platform for brands of all sizes
+---
+[86] It's a no brainer
+---
+[87] Its a no brainer
+---
+[88] It’s a no-brainer. The complete toolkit for modern product registration.
+---
+[89] Everything in place for better coverage.
+---
+[90] Hundreds of brands rely on Dyrect to manage warranty claims, repairs, and service requests with better visibility and control.
+---
+[91] Hundreds of brands have uplifted Customer Satisfaction & uplifted their revenue with Dyrect, and who wouldn't to?
+---
+[92] ICON
+---
+[93] Digital Warranty Cards
+---
+[94] QR Code Registration
+---
+[95] Custom Forms and Policies
+---
+[96] Multi-Touchpoint Plan Offers
+---
+[97] Flexible Plan Configuration
+---
+[98] Branded Plan Management Portal
+---
+[99] Warranty Claim Ticket Management
+---
+[100] Serial Number Validation
+---
+[101] Track Product Service Status
+---
+[102] Engage customer on your website
+---
+[103] Improved brand exprience
+---
+[104] Upsell & Cross sell 
+---
+[105] Patent Pending Technology
+---
+[106] 24x7 AI Monitoring
+---
+[107] No apps required!
+---
+[108] Give every registered buyer a digital warranty record linked to the product, purchase date, and warranty details.
+---
+[109] Let buyers activate warranty through QR codes printed on packaging, inserts, manuals, or product labels.
+---
+[110] Create registration forms, product fields, and warranty rules for different products, categories, and sales channels.
+---
+[111] Present extended warranty plans across product pages, checkout, and post-purchase journeys to capture more plan sales across the buying cycle.
+---
+[112] Set coverage length, pricing, and eligibility rules by product line, category, or SKU.
+---
+[113] Keep plan offers, customer touchpoints, and coverage journeys aligned with your brand identity.
+---
+[114] Track, assign, and resolve claim tickets from one workspace with full visibility across every stage.
+---
+[115] Verify warranty eligibility through serialized product data, proof of purchase, and registration records
+---
+[116] Monitor product status after a claim is raised, including repair progress, replacements, and final resolution.
+---
+[117] Direct your customers on your website rather and improve brand's visibility and achieve genuine customer onboarding
+---
+[118] When customers enjoy the experience provided by a brand that also adds value, that's when they feel connected and loyal
+---
+[119] It's the best time to cross-sell and upsell all your bestsellers, as you already have satisfied buyers that can easily be influenced to try other products
+---
+[120] AI-monitored patent-pending technology invalidates clones, eliminating counterfeits
+---
+[121] Receive up-to-the-second data and location alerts, enabling quick actions against counterfeiting
+---
+[122] Why to add irrelevant needs? You actually do not need a separate app where your customers can verify products but just a simple landing page
+---
+[123] Read more >
+---
+[124] Self-Serve Warranty Portal
+---
+[125] Branded Customer Experience
+---
+[126] Email, SMS, and CRM Integrations
+---
+[127] Coverage and Eligibility Records
+---
+[128] Self-Serve Customer Portal
+---
+[129] Warranty Revenue Visibility
+---
+[130] Real-time Report Access
+---
+[131] Claims Analytics and Defect Insights
+---
+[132] Unified Agent Workspace
+---
+[133] Customized campaigns
+---
+[134] They are family!
+---
+[135] Promote resources
+---
+[136] Geo-Locations Based Red-Flagging
+---
+[137] AI Monitored Serialization Technology
+---
+[138] Customised landing page
+---
+[139] Give buyers one branded space to view product details, warranty status, and registration records.
+---
+[140] Deliver a consistent brand experience through customized registration pages, product portals, and customer interactions that reflect brand identity.
+---
+[141] Push registration data into Klaviyo, HubSpot, Shopify, and other tools for follow-up campaigns and audience growth.
+---
+[142] Maintain clear records for active plans, expiry dates, covered products, and service eligibility.
+---
+[143] Give customers a branded destination to view coverage, renew plans, and access support information.
+---
+[144] Track plan uptake, renewal activity, expiry-based opportunities, and warranty-linked revenue insights.
+---
+[145] Access live reports on claims, service activity, and agent performance to maintain full visibility across operations.
+---
+[146] Track service performance, claim trends, and recurring product issues through one connected reporting view.
+---
+[147] Give service teams one place to manage claims, customer details, product information, and service actions without back-and-forth coordination.
+---
+[148] Campaigns that best resonate with your customers. Make it relatable, make them yours!
+---
+[149] Customers are family and they should be treated like that by adding value in their lives and making sure their concerns are addressed
+---
+[150] You can also promote your digital manuals, guides, and other resources through loyal programs. With happy customers. you have better chances to promote your brand effectively 
+---
+[151] Detect counterfeit activities based on geolocations, making it highly effective for conducting raids
+---
+[152] Each product receives a secure and traceable identity through Dyrect codes (QR, NFC, or RFID that captures the entire product journey
+---
+[153] Talking about the landing page, personalize it with your brand aesthetics and needs along with adding any elements you want to further promote the brand
+---
+[154] Testimonial
+---
+[155] Why 100s of brands trust Dyrect?
+---
+[156] Testimonials
+---
+[157] Integration
+---
+[158] Seamlessly Connect With Your Existing Tools 
+
+---
+[159] Connect with your favourite marketing apps
+---
+[160] Dyrect Plugs Into the Tools Your Team Already Uses
+
+No ripping and replacing your existing stack. Dyrect's registration system connects with your ecommerce store, marketing tools, and support platform so data flows automatically where it needs to go.
+
+View Dyrect Integrations >
+---
+[161] Seamlessly Connect with any system.
+
+Dyrect integrates seamlessly with systems that power every aspect of your business.
+Use out of the box connectors or use restful APIs.
+
+View Dyrect Integrations >
+---
+[162] Seamlessly Connect with any system.
+
+Dyrect integrates seamlessly with systems that power every aspect of your business.
+Use out of the box connectors or use restful APIs.
+
+View Dyrect Integrations >
+---
+[163] Seamlessly Connect with any system.
+
+Dyrect integrates seamlessly with systems that power every aspect of your business.
+Use out of the box connectors or use restful APIs.
+
+View Dyrect Integrations >
+---
+[164] Seamlessly Connect with any system.
+
+Dyrect integrates seamlessly with systems that power every aspect of your business.
+Use out of the box connectors or use restful APIs.
+
+View Dyrect Integrations >
+---
+[165] Stats
+---
+[166] Powerful solutions that brands love, users adopt easily, use powerfully.
+---
+[167] 4 Mn +
+---
+[168] 500+
+---
+[169] 3X
+---
+[170] 1 Mn +
+---
+[171] Customers Served
+---
+[172] Brands Running on Dyrect
+---
+[173] Higher Attach Rate
+---
+[174] Consumers Onboarded
+---
+[175] Increase In Repeat Sales
+---
+[176] More Registrations
+---
+[177] CTA
+---
+[178] Ready for a Profitable Tomorrow?
+---
+[179] Join 100s of successful global brands who've transformed their Post Purchase Engagement with us. Start today for a profitable tomorrow, where solution meets success
+---
+[180] Get  A Demo >
+---
+[181] Resources
+---
+[182] Post Purchase Playbooks
+---
+[183] Join us on your journey to smart, sustainable growth.
+---
+[184] Capture First Party Data
+---
+[185] Weekly Dose
+---
+[186] Brand Warranties
+---
+[187] Playbook
+---
+[188] Newsletter
+---
+[189] chip format
+---
+[190] Footer
+---
+[191] same as in www.dyrect.co
+---
+[192] same as in www.dyrect.co
+---
+[193] same as in www.dyrect.co
+---
+[194] same as in www.dyrect.co
+---
+[195] same as in www.dyrect.co
+---

@@ -1,0 +1,61 @@
+/* ============================================================
+   Shared responsive styles — applies to home page + every product page.
+   Targets the inline-styled shared components from sections-a, sections-b,
+   and shared-nav. !important is used because the React components carry
+   inline grid-templates that would otherwise win over external CSS.
+   Breakpoints:  ≤1080 (tablet),  ≤980 (nav burger),  ≤780 (mobile-large),  ≤520 (mobile)
+   ============================================================ */
+
+/* Defensive: prevent any horizontal scroll on smaller viewports */
+html, body { overflow-x: hidden; }
+
+/* The shared mobile burger button — hidden by default on desktop */
+.nav-burger { display: none; }
+
+/* ─────── Tablet ≤ 1080 ─────── */
+@media (max-width: 1080px) {
+  .logo-grid          { grid-template-columns: repeat(5, 1fr) !important; }
+  .footer-grid        { grid-template-columns: repeat(3, 1fr) !important; }
+  .integrations-grid  { grid-template-columns: 1fr !important; gap: 40px !important; }
+  .cap-grid           { grid-template-columns: repeat(2, 1fr) !important; }
+  .blog-grid          { grid-template-columns: repeat(2, 1fr) !important; }
+  .blog-grid > a:nth-child(3) { grid-column: 1 / -1; }
+  .faq-grid           { grid-template-columns: 1fr !important; gap: 32px !important; }
+  .shopify-grid       { grid-template-columns: 1fr !important; gap: 40px !important; }
+}
+
+/* ─────── Nav burger appears ≤ 980 (before nav overflows) ─────── */
+@media (max-width: 980px) {
+  .nav-links { display: none !important; }
+  .nav-cta   { display: none !important; }
+  .nav-burger { display: inline-flex !important; }
+}
+
+/* ─────── Mobile-large ≤ 780 ─────── */
+@media (max-width: 780px) {
+  .section { padding: 64px 0; }
+  .section-tight { padding: 48px 0; }
+
+  .testimonial-grid   { grid-template-columns: 1fr !important; }
+  .cap-grid           { grid-template-columns: 1fr !important; }
+  .blog-grid          { grid-template-columns: 1fr !important; }
+  .blog-grid > a:nth-child(3) { grid-column: auto; }
+  .stats-grid         { gap: 20px !important; flex-wrap: wrap !important; }
+  .logo-grid          { grid-template-columns: repeat(3, 1fr) !important; row-gap: 28px !important; column-gap: 16px !important; }
+  .footer-grid        { grid-template-columns: repeat(2, 1fr) !important; gap: 28px !important; }
+  .footer-bottom      { grid-template-columns: 1fr !important; gap: 28px !important; }
+}
+
+/* ─────── Mobile ≤ 520 ─────── */
+@media (max-width: 520px) {
+  .container { padding: 0 18px; }
+  .section { padding: 48px 0; }
+  .section-tight { padding: 36px 0; }
+
+  .section-title { font-size: clamp(24px, 7vw, 30px) !important; }
+
+  .stats-grid         { flex-direction: column !important; gap: 24px !important; }
+  .stats-grid > div   { padding-left: 18px !important; }
+  .logo-grid          { grid-template-columns: repeat(2, 1fr) !important; }
+  .footer-grid        { grid-template-columns: 1fr !important; gap: 24px !important; }
+}

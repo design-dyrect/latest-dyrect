@@ -1,0 +1,237 @@
+/* Dyrect home page — design tokens + global styles */
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  src: url('assets/fonts/IBMPlexSans-VariableFont_wdth_wght.ttf') format('truetype');
+  font-weight: 100 700;
+  font-style: normal;
+  font-display: swap;
+}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Brand */
+  --color-brand-blue:        #2437F6;
+  --color-brand-blue-hover:  #1a2bd4;
+  --color-brand-blue-deep:   #0F1FB8;
+  --color-brand-blue-light:  #E9E3FE;
+  --color-brand-blue-subtle: #EEF0FE;
+
+  /* Slate */
+  --color-slate-50:  #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #E2E8F0;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #94A3B8;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+
+  /* Semantic */
+  --color-success:        #0ABE52;
+  --color-success-subtle: #DCFCE7;
+  --color-success-text:   #166534;
+  --color-error:          #EF4444;
+  --color-error-subtle:   #FEE2E2;
+  --color-warning:        #F59E0B;
+  --color-warning-subtle: #FEF3C7;
+  --color-info-subtle:    #DBEAFE;
+  --color-info-text:      #1E3A8A;
+
+  /* UI */
+  --bg-app:        var(--color-slate-50);
+  --bg-card:       #FFFFFF;
+  --fg-primary:    var(--color-slate-800);
+  --fg-secondary:  var(--color-slate-600);
+  --fg-muted:      var(--color-slate-500);
+  --border-default: var(--color-slate-200);
+  --border-input:   var(--color-slate-300);
+
+  /* Type */
+  --font-display: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-body:    'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono:    'IBM Plex Mono', monospace;
+
+  /* Marketing scale (larger than product UI) */
+  --text-xs:   12px;
+  --text-sm:   13px;
+  --text-base: 14px;
+  --text-md:   16px;
+  --text-lg:   18px;
+  --text-xl:   20px;
+  --text-2xl:  24px;
+  --text-3xl:  30px;
+  --text-4xl:  40px;
+  --text-5xl:  56px;
+  --text-6xl:  72px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-2xl: 16px;
+  --radius-full: 9999px;
+
+  --shadow-sm: 0 1px 2px rgba(15,23,42,0.06);
+  --shadow-md: 0 1px 3px rgba(15,23,42,0.07), 0 1px 2px rgba(15,23,42,0.04);
+  --shadow-lg: 0 10px 30px -8px rgba(15,23,42,0.15), 0 4px 12px -2px rgba(15,23,42,0.06);
+  --shadow-xl: 0 24px 60px -12px rgba(15,23,42,0.22), 0 8px 20px -4px rgba(15,23,42,0.08);
+  --shadow-blue: 0 18px 48px -16px rgba(36,55,246,0.45), 0 6px 18px -4px rgba(36,55,246,0.15);
+
+  --container: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-md);
+  line-height: 1.5;
+  color: var(--fg-primary);
+  background: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; border: 0; background: none; }
+
+.container {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1;
+  padding: 12px 20px;
+  border-radius: var(--radius-md);
+  transition: all 140ms ease;
+  white-space: nowrap;
+}
+.btn-primary {
+  background: var(--color-brand-blue);
+  color: white;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 6px 16px -4px rgba(36,55,246,0.5);
+}
+.btn-primary:hover {
+  background: var(--color-brand-blue-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset, 0 10px 22px -6px rgba(36,55,246,0.6);
+}
+.btn-ghost {
+  color: var(--fg-primary);
+  background: transparent;
+}
+.btn-ghost:hover { background: var(--color-slate-100); }
+.btn-secondary {
+  background: white;
+  color: var(--fg-primary);
+  border: 1px solid var(--border-default);
+}
+.btn-secondary:hover { background: var(--color-slate-50); border-color: var(--color-slate-300); }
+
+.btn-lg { padding: 14px 22px; font-size: 16px; }
+
+/* Display type */
+.display-heading {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  color: var(--color-slate-900);
+  margin: 0;
+}
+.eyebrow {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-brand-blue);
+}
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -1.2px;
+  color: var(--color-slate-900);
+  margin: 0;
+}
+.section-sub {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.55;
+  color: var(--fg-secondary);
+  max-width: 680px;
+  margin: 16px auto 0;
+}
+
+/* Section */
+.section { padding: 96px 0; }
+.section-tight { padding: 64px 0; }
+
+/* Emphasis — used in headings to highlight key words */
+.em {
+  color: var(--color-brand-blue);
+  font-style: normal;
+  font-weight: inherit;
+}
+
+/* Pill */
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px 6px 8px;
+  border-radius: var(--radius-full);
+  background: var(--color-brand-blue-subtle);
+  color: var(--color-brand-blue-deep);
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid color-mix(in srgb, var(--color-brand-blue) 14%, transparent);
+}
+.pill .dot {
+  width: 18px; height: 18px;
+  border-radius: 999px;
+  background: var(--color-brand-blue);
+  color: white;
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Scrollbar polish (subtle) */
+::selection { background: var(--color-brand-blue); color: white; }
+
+/* Reveal-on-scroll */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity 700ms ease, transform 700ms cubic-bezier(.16,.84,.44,1); }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}

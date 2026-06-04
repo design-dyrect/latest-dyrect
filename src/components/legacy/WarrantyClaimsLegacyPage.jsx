@@ -563,7 +563,7 @@ const DYRECT_URLS = {
   pricing: '/pricing',
   showcase: 'https://www.dyrect.co/showcase',
   features: '/features',
-  faqs: 'https://www.dyrect.co/faqs',
+  faqs: '/faqs',
   blog: 'https://www.dyrect.co/blog',
   integrations: 'https://www.dyrect.co/integrations',
   caseStudies: 'https://www.dyrect.co/case-studies',

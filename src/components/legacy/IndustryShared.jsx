@@ -1516,7 +1516,7 @@ function SiteFooter({ activeProduct }) {
     {
       h: 'Resources',
       links: [
-        { l: 'FAQs', href: '#faq' },
+        { l: 'FAQs', href: '/faqs' },
         { l: 'Blog', href: '#blog' },
         { l: 'Integrations', href: '#integrations' },
         { l: 'Brand Warranties', href: '#' },
@@ -1778,7 +1778,7 @@ const NAV_ITEMS = [
         { label: 'Integrations', href: '#integrations' },
         { label: 'Client Success Stories', href: '#' },
         { label: 'How it Works', href: '#' },
-        { label: "FAQ's", href: '#faq' },
+        { label: "FAQ's", href: '/faqs' },
       ],
     },
   },

@@ -1,5 +1,6 @@
-import {Suspense} from 'react';
 import {client} from '../../sanity/lib/client';
+
+export const dynamic = 'force-dynamic';
 import {partnersQuery} from '../../sanity/lib/queries';
 import PartnersClient from './PartnersClient';
 

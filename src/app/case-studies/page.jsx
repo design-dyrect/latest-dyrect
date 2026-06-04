@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import {client} from '../../sanity/lib/client';
 import {caseStudiesQuery} from '../../sanity/lib/queries';
 import CaseStudiesClient from './CaseStudiesClient';

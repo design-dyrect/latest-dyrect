@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import {client} from '../../sanity/lib/client';
 import {brandShowcasesQuery} from '../../sanity/lib/queries';
 import ShowcaseClient from './ShowcaseClient';

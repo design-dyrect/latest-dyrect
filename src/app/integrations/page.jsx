@@ -1,3 +1,4 @@
+export const dynamic = 'force-dynamic';
 import {client} from '../../sanity/lib/client';
 import {integrationsQuery} from '../../sanity/lib/queries';
 import IntegrationsClient from './IntegrationsClient';

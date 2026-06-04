@@ -3670,7 +3670,7 @@ function EwApp() {
 
   return (
     <>
-      <SiteNav activeProduct="extended-warranties" />
+      
       <main>
         <EwHero />
         {tweaks.show_logos        && <LogoCloud />}
@@ -3705,7 +3705,7 @@ function EwApp() {
           />
         )}
       </main>
-      <SiteFooter activeProduct="extended-warranties" />
+      
 
       <TweaksPanel title="Tweaks">
         <TweakSection label="Style">

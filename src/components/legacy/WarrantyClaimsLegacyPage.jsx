@@ -3733,7 +3733,7 @@ function WcApp() {
 
   return (
     <>
-      <SiteNav activeProduct="warranty-claims" />
+      
       <main>
         <WcHero />
         {tweaks.show_logos        && <LogoCloud />}
@@ -3768,7 +3768,7 @@ function WcApp() {
           />
         )}
       </main>
-      <SiteFooter activeProduct="warranty-claims" />
+      
 
       <TweaksPanel title="Tweaks">
         <TweakSection label="Style">

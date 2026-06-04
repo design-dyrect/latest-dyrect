@@ -3292,7 +3292,7 @@ function FeaturesApp() {
 
   return (
     <>
-      <SiteNav />
+      
       <main>
         <FeaturesHero />
         <LogoCloud />
@@ -3321,7 +3321,7 @@ function FeaturesApp() {
           secondaryLabel="Install on Shopify"
         />
       </main>
-      <SiteFooter />
+      
     </>
   );
 }

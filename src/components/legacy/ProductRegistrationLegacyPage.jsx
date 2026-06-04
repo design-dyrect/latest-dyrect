@@ -3768,7 +3768,7 @@ function PrApp() {
 
   return (
     <>
-      <SiteNav activeProduct="product-registration" />
+      
       <main>
         <PrHero />
         {tweaks.show_logos        && <LogoCloud />}
@@ -3803,7 +3803,7 @@ function PrApp() {
           />
         )}
       </main>
-      <SiteFooter activeProduct="product-registration" />
+      
 
       <TweaksPanel title="Tweaks">
         <TweakSection label="Style">

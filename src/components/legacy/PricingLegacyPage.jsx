@@ -486,7 +486,7 @@ function PricingApp() {
 
   return (
     <>
-      <SiteNav />
+      
       <main>
         <PricingHero />
         <PricingLogoCloud />
@@ -495,7 +495,7 @@ function PricingApp() {
         <PricingFAQ />
         <PricingCTA />
       </main>
-      <SiteFooter />
+      
     </>
   );
 }

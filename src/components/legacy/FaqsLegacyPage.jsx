@@ -577,7 +577,7 @@ export default function FaqsLegacyPage() {
     <>
       <link rel="stylesheet" href="/faq-styles.css" />
       <link rel="stylesheet" href="/faq-responsive.css" />
-      <SiteNav />
+      
       <main>
 
         {/* ── Hero ── */}
@@ -781,7 +781,7 @@ export default function FaqsLegacyPage() {
           checks={['No credit card needed', 'Live in under 30 min', '500+ brands trust Dyrect']}
         />
       </main>
-      <SiteFooter />
+      
 
       <style>{`
         @media (max-width: 860px) {

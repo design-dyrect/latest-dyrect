@@ -1520,7 +1520,7 @@ function SiteFooter({ activeProduct }) {
         { l: 'Blog', href: '#blog' },
         { l: 'Integrations', href: '#integrations' },
         { l: 'Brand Warranties', href: '#' },
-        { l: 'Our Partners', href: '#' },
+        { l: 'Our Partners', href: '/partners' },
       ],
       sub: {
         h: 'Alternatives',

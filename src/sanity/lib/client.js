@@ -2,7 +2,7 @@ import {createClient} from 'next-sanity';
 import {apiVersion, dataset, projectId} from './api';
 
 export const client = createClient({
-  projectId: projectId || 'replace-with-project-id',
+  projectId,
   dataset,
   apiVersion,
   useCdn: true,

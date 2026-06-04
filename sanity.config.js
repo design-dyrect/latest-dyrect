@@ -3,7 +3,7 @@ import {structureTool} from 'sanity/structure';
 import {visionTool} from '@sanity/vision';
 import {schemaTypes} from './src/sanity/schemaTypes';
 
-const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'replace-with-project-id';
+const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || '2clvfbpa';
 const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET || 'production';
 
 export default defineConfig({
@@ -14,25 +14,69 @@ export default defineConfig({
   basePath: '/studio',
   plugins: [
     structureTool({
-      structure: (S) =>
-        S.list()
+      structure: (S) => {
+        const collection = (type, title) =>
+          S.listItem().title(title).schemaType(type).child(S.documentTypeList(type).title(title));
+
+        return S.list()
           .title('Dyrect CMS')
           .items([
-            S.listItem().title('Partners').schemaType('partner').child(S.documentTypeList('partner').title('Partners')),
-            S.listItem().title('Case Studies').schemaType('caseStudy').child(S.documentTypeList('caseStudy').title('Case Studies')),
-            S.listItem().title('Integrations').schemaType('integration').child(S.documentTypeList('integration').title('Integrations')),
-            S.listItem().title('Features').schemaType('feature').child(S.documentTypeList('feature').title('Features')),
-            S.listItem().title('Products').schemaType('product').child(S.documentTypeList('product').title('Products')),
-            S.listItem().title('Resources').schemaType('resource').child(S.documentTypeList('resource').title('Resources')),
-            S.listItem().title('Glossary').schemaType('glossaryTerm').child(S.documentTypeList('glossaryTerm').title('Glossary')),
-            S.listItem().title('Brand Warranties').schemaType('brandWarranty').child(S.documentTypeList('brandWarranty').title('Brand Warranties')),
-            S.listItem().title('FAQs').schemaType('faq').child(S.documentTypeList('faq').title('FAQs')),
-            S.listItem().title('Testimonials').schemaType('testimonial').child(S.documentTypeList('testimonial').title('Testimonials')),
-            S.divider(),
             S.listItem()
               .title('Site Settings')
               .child(S.document().schemaType('siteSettings').documentId('siteSettings').title('Site Settings')),
-          ]),
+            S.divider(),
+            S.listItem()
+              .title('Product & Platform')
+              .child(
+                S.list()
+                  .title('Product & Platform')
+                  .items([
+                    collection('product', 'Products'),
+                    collection('feature', 'Features'),
+                    collection('integration', 'Integrations'),
+                    collection('productFaq', 'Product FAQs - Drafts'),
+                  ])
+              ),
+            S.listItem()
+              .title('Solutions')
+              .child(
+                S.list()
+                  .title('Solutions')
+                  .items([
+                    collection('solution', 'Solutions'),
+                    collection('brandWarranty', 'Brand Warranties'),
+                  ])
+              ),
+            S.listItem()
+              .title('Social Proof')
+              .child(
+                S.list()
+                  .title('Social Proof')
+                  .items([
+                    collection('caseStudy', 'Case Studies'),
+                    collection('brandShowcase', 'Brand Showcases'),
+                    collection('testimonial', 'Testimonials'),
+                    collection('partner', 'Partners'),
+                  ])
+              ),
+            S.listItem()
+              .title('Content & SEO')
+              .child(
+                S.list()
+                  .title('Content & SEO')
+                  .items([
+                    collection('guide', 'Guides'),
+                    collection('resource', 'Resources'),
+                    collection('ebook', 'E Books'),
+                    collection('glossaryTerm', 'Glossary Terms'),
+                    collection('blogPost', 'Blog Posts - Drafts'),
+                    collection('podcast', 'Podcasts'),
+                    collection('comparison', 'Comparisons'),
+                    collection('faq', 'General FAQs'),
+                  ])
+              ),
+          ]);
+      },
     }),
     visionTool(),
   ],

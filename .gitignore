@@ -4,3 +4,5 @@ out/
 dist/
 .DS_Store
 .vercel/
+.env*.local
+new-dyrect/

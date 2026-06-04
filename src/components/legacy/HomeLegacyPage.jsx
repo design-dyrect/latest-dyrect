@@ -2406,7 +2406,7 @@ const DYRECT_URLS = {
   integrations: 'https://www.dyrect.co/integrations',
   caseStudies: 'https://www.dyrect.co/case-studies',
   helpCenter: 'https://help.dyrect.co/',
-  partners: 'https://www.dyrect.co/partners-directory',
+  partners: '/partners',
   security: 'https://www.dyrect.co/privacy-policy',
   status: 'https://status.dyrect.co/',
   warranty: 'https://www.dyrect.co/warranty',

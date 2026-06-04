@@ -1232,6 +1232,7 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
   gap: 0;
   padding: 28px 24px 24px;
   border: 1px solid var(--color-slate-200);
@@ -1255,11 +1256,17 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   width: 100%;
   height: 90px;
   margin-bottom: 16px;
+  overflow: hidden;
+  padding: 8px 16px;
+  box-sizing: border-box;
 }
 .partner-card-logo img {
-  max-width: 140px;
-  max-height: 72px;
+  max-width: 100%;
+  max-height: 68px;
+  width: auto;
+  height: auto;
   object-fit: contain;
+  display: block;
 }
 .partner-card-initial {
   font-size: 36px;

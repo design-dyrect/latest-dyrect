@@ -6,7 +6,7 @@ export const metadata = {
   description: 'Warranty registration, claims management, tracking, and extended warranty workflows for modern product brands.',
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({children}) {
   return (
     <html lang="en">
       <body>

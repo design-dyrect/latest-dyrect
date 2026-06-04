@@ -1250,22 +1250,20 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
 /* Logo box — fixed aspect container, image fills it with contain */
 .partner-card-logo {
   width: 100%;
-  height: 100px;
+  height: 110px;
   margin-bottom: 16px;
-  padding: 16px 24px;
-  box-sizing: border-box;
-  background: var(--color-slate-50);
-  border: 1px solid var(--color-slate-100);
-  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px 20px;
+  box-sizing: border-box;
 }
+/* THE correct logo pattern: max-width + max-height + auto = never clips, never stretches */
 .partner-card-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;   /* always shows full logo, no cropping */
-  object-position: center;
+  max-width: 100%;
+  max-height: 80px;
+  width: auto;
+  height: auto;
   display: block;
 }
 .partner-card-initial {
@@ -1397,7 +1395,7 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px;
+  min-height: 180px;
   padding: 32px 40px;
   box-sizing: border-box;
   border: 1px solid var(--color-slate-200);
@@ -1405,10 +1403,10 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   background: linear-gradient(180deg, #ffffff, #f8fafc);
 }
 .partner-detail-logo-box img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
   display: block;
 }
 .partner-detail-logo-initial {
@@ -1618,36 +1616,34 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   pointer-events: none;
 }
 
-/* Logo box — fixed container, image always shows fully via object-fit:contain */
+/* Logo box — flex centering + max-width/max-height pattern = always full logo, zero cropping */
 .dir-card-logo {
   width: 100%;
-  height: 90px;
-  padding: 14px 20px;
-  box-sizing: border-box;
-  background: var(--color-slate-50);
-  border: 1px solid var(--color-slate-100);
-  border-radius: 10px;
+  height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px 20px;
+  box-sizing: border-box;
   flex-shrink: 0;
 }
 .dir-card-logo--sm {
-  height: 70px;
+  height: 72px;
   padding: 10px 16px;
 }
 .dir-card-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;     /* Full logo always visible — no cropping ever */
-  object-position: center;
+  max-width: 100%;
+  max-height: 72px;
+  width: auto;
+  height: auto;
   display: block;
 }
 .dir-card-logo--sm img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  max-width: 100%;
+  max-height: 50px;
+  width: auto;
+  height: auto;
+  display: block;
 }
 .dir-card-initial {
   font-size: 28px;
@@ -1868,7 +1864,7 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 160px;
+  min-height: 160px;
   padding: 28px 32px;
   box-sizing: border-box;
   border: 1px solid var(--color-slate-200);
@@ -1877,21 +1873,22 @@ nav[aria-label="Feature sections"]::-webkit-scrollbar {
   flex-shrink: 0;
 }
 .detail-header-logo--sm {
-  height: 120px;
+  min-height: 110px;
   padding: 20px 28px;
 }
 .detail-header-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  max-width: 100%;
+  max-height: 110px;
+  width: auto;
+  height: auto;
   display: block;
 }
 .detail-header-logo--sm img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
+  max-width: 100%;
+  max-height: 72px;
+  width: auto;
+  height: auto;
+  display: block;
 }
 .detail-logo-initial {
   font-size: 48px;

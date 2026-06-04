@@ -19,7 +19,7 @@ export default async function CaseStudyDetailPage({params}) {
   const cs = await client.fetch(caseStudyBySlugQuery, {slug});
   if (!cs) notFound();
 
-  const logoUrl = cs.customerLogo ? urlFor(cs.customerLogo).width(400).height(200).fit('max').url() : null;
+  const logoUrl = cs.customerLogo ? urlFor(cs.customerLogo).url() : null;
   const bannerUrl = cs.heroImage ? urlFor(cs.heroImage).width(1400).height(560).fit('crop').url() : null;
   const quoteImgUrl = cs.quoteAuthorImage ? urlFor(cs.quoteAuthorImage).width(96).height(96).fit('crop').url() : null;
 

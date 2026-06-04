@@ -19,7 +19,7 @@ export default async function ShowcaseDetailPage({params}) {
   const brand = await client.fetch(brandShowcaseBySlugQuery, {slug});
   if (!brand) notFound();
 
-  const logoUrl = brand.brandLogo ? urlFor(brand.brandLogo).width(400).height(200).fit('max').url() : null;
+  const logoUrl = brand.brandLogo ? urlFor(brand.brandLogo).url() : null;
   const bannerUrl = brand.heroImage ? urlFor(brand.heroImage).width(1400).height(560).fit('crop').url() : null;
 
   return (

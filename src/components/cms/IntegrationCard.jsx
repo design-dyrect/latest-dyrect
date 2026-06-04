@@ -8,9 +8,7 @@ const CATEGORY_LABELS = {
 };
 
 export default function IntegrationCard({integration, comingSoon}) {
-  const logoUrl = integration.logo
-    ? urlFor(integration.logo).width(200).height(100).fit('max').url()
-    : null;
+  const logoUrl = integration.logo ? urlFor(integration.logo).url() : null;
 
   return (
     <Link
@@ -24,7 +22,6 @@ export default function IntegrationCard({integration, comingSoon}) {
           <span className="dir-card-initial">{integration.title?.slice(0, 1)}</span>
         )}
       </div>
-
       <div className="dir-card-body">
         <h3 className="dir-card-name">{integration.title}</h3>
         {integration.category && (

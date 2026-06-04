@@ -38,7 +38,7 @@ export default async function PartnerDetailPage({params}) {
   if (!partner) notFound();
 
   const logoUrl = partner.logo
-    ? urlFor(partner.logo).width(400).height(200).fit('max').url()
+    ? urlFor(partner.logo).url()
     : null;
 
   return (

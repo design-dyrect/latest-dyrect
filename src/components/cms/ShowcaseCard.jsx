@@ -2,9 +2,7 @@ import Link from 'next/link';
 import {urlFor} from '../../sanity/lib/image';
 
 export default function ShowcaseCard({brand}) {
-  const logoUrl = brand.brandLogo
-    ? urlFor(brand.brandLogo).width(280).height(140).fit('max').url()
-    : null;
+  const logoUrl = brand.brandLogo ? urlFor(brand.brandLogo).url() : null;
 
   return (
     <Link className="dir-card dir-card--showcase" href={`/showcase/${brand.slug.current}`}>
@@ -15,7 +13,6 @@ export default function ShowcaseCard({brand}) {
           <span className="dir-card-initial">{brand.brandName?.slice(0, 1)}</span>
         )}
       </div>
-
       <div className="dir-card-body">
         <h3 className="dir-card-name">{brand.brandName}</h3>
         {brand.country && <p className="dir-card-meta">{brand.country}</p>}

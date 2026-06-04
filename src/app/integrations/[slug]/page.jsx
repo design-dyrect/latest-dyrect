@@ -25,7 +25,7 @@ export default async function IntegrationDetailPage({params}) {
   const integration = await client.fetch(integrationBySlugQuery, {slug});
   if (!integration) notFound();
 
-  const logoUrl = integration.logo ? urlFor(integration.logo).width(300).height(150).fit('max').url() : null;
+  const logoUrl = integration.logo ? urlFor(integration.logo).url() : null;
 
   return (
     <main className="detail-page">

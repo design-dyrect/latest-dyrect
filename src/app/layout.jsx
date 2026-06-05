@@ -5,11 +5,11 @@ import JsonLd from '../components/JsonLd';
 export const metadata = {
   title: {
     default: 'Dyrect — The most seamless warranty management software',
-    template: '%s | Dyrect',
+    template: '%s',
   },
   description: 'Warranty registration, claims management, tracking, and extended warranty workflows for modern product brands.',
   metadataBase: new URL('https://dyrect.co'),
-  alternates: {canonical: 'https://dyrect.co'},
+  alternates: {canonical: 'https://dyrect.co/'},
   robots: {index: true, follow: true},
   openGraph: {
     siteName: 'Dyrect',

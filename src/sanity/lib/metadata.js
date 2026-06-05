@@ -19,7 +19,8 @@ export function buildMetadata(doc, opts = {}) {
     ? `${docName}${opts.titleSuffix || ''} | Dyrect`
     : (opts.defaultTitle || 'Dyrect');
   const title = doc.seoTitle || fallbackTitle;
-  const description = doc.seoDescription || opts.defaultDescription || doc.summary || doc.excerpt     || '';
+  const description = doc.seoDescription || opts.defaultDescription || doc.summary || doc.excerpt
+    || (docName ? `Learn how ${docName} uses Dyrect for warranty management and post-purchase experiences.` : '');
   const canonical   = doc.canonicalUrl   || (opts.path ? `${SITE_URL}${opts.path}` : undefined);
   const noIndex     = doc.noIndex        || false;
 

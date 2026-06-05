@@ -4,6 +4,7 @@ import {urlFor} from '../../../sanity/lib/image';
 import {buildMetadata} from '../../../sanity/lib/metadata';
 import {partnerBySlugQuery} from '../../../sanity/lib/queries';
 import RichText from '../../../components/cms/RichText';
+import JsonLd from '../../../components/JsonLd';
 
 export const dynamic = 'force-dynamic';
 
@@ -23,8 +24,19 @@ export default async function PartnerDetailPage({params}) {
 
   const logoUrl = partner.logo ? urlFor(partner.logo).url() : null;
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {'@type': 'ListItem', position: 1, name: 'Home', item: 'https://dyrect.co'},
+      {'@type': 'ListItem', position: 2, name: 'Partners', item: 'https://dyrect.co/partners'},
+      {'@type': 'ListItem', position: 3, name: partner.title, item: `https://dyrect.co/partners/${slug}`},
+    ],
+  };
+
   return (
     <main className="partner-detail-page">
+      <JsonLd data={breadcrumbSchema} />
       <div className="partner-detail-container">
         <a className="partner-detail-back" href="/partners">← Back to Partners</a>
 

@@ -8,7 +8,7 @@ import RichText from '../../../components/cms/RichText';
 export async function generateMetadata({params}) {
   const {slug} = await params;
   const brand = await client.fetch(brandShowcaseBySlugQuery, {slug});
-  return buildMetadata(brand, {defaultTitle: 'Brand Showcase | Dyrect', path: `/showcase/${slug}`});
+  return buildMetadata(brand, {titleSuffix: ' Showcase', defaultTitle: 'Brand Showcase | Dyrect', path: `/showcase/${slug}`});
 }
 
 export default async function ShowcaseDetailPage({params}) {

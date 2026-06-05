@@ -1,7 +1,7 @@
 import {urlFor} from './image';
 
 const SITE_URL = 'https://dyrect.co';
-const DEFAULT_OG = '/assets/logo-blue-wordmark.png';
+const DEFAULT_OG = `${SITE_URL}/assets/og-default.png`;
 
 /**
  * Build Next.js metadata from a Sanity document's SEO fields.
@@ -13,7 +13,12 @@ const DEFAULT_OG = '/assets/logo-blue-wordmark.png';
 export function buildMetadata(doc, opts = {}) {
   if (!doc) return {title: opts.defaultTitle || 'Dyrect'};
 
-  const title       = doc.seoTitle       || opts.defaultTitle       || doc.title || doc.customerName || doc.brandName || 'Dyrect';
+  // Build a descriptive fallback title from the document content
+  const docName = doc.title || doc.customerName || doc.brandName || '';
+  const fallbackTitle = docName
+    ? `${docName}${opts.titleSuffix || ''} | Dyrect`
+    : (opts.defaultTitle || 'Dyrect');
+  const title = doc.seoTitle || fallbackTitle;
   const description = doc.seoDescription || opts.defaultDescription || doc.summary || doc.excerpt     || '';
   const canonical   = doc.canonicalUrl   || (opts.path ? `${SITE_URL}${opts.path}` : undefined);
   const noIndex     = doc.noIndex        || false;

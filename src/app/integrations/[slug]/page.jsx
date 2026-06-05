@@ -8,7 +8,7 @@ import RichText from '../../../components/cms/RichText';
 export async function generateMetadata({params}) {
   const {slug} = await params;
   const integration = await client.fetch(integrationBySlugQuery, {slug});
-  return buildMetadata(integration, {defaultTitle: 'Integration | Dyrect', path: `/integrations/${slug}`});
+  return buildMetadata(integration, {titleSuffix: ' Integration', defaultTitle: 'Integration | Dyrect', path: `/integrations/${slug}`});
 }
 
 const CATEGORY_LABELS = {

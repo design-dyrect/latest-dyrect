@@ -8,7 +8,7 @@ export const guide = defineType({
   groups: pageGroups,
   fields: [
     defineField({name: 'title', title: 'Guide Title', type: 'string', validation: (Rule) => Rule.required().max(120), group: 'basic'}),
-    {...slugField('title', 'Creates /guides/guide-title.'), group: 'basic'},
+    {...slugField('title', 'Creates /guide/guide-title. URL: dyrect.co/guide/your-slug'), group: 'basic'},
     summaryField('excerpt', 'Guide Summary', 55, true),
     imageWithAlt('coverImage', 'Guide Cover Image', 'Hero/thumbnail image for this guide.'),
     defineField({name: 'authorName', title: 'Author Name', type: 'string', group: 'basic'}),

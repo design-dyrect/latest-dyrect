@@ -73,3 +73,19 @@ export const integrationBySlugQuery = defineQuery(`
     ${SEO_FIELDS}
   }
 `);
+
+// ─── Guides ───────────────────────────────────────────────────────────────────
+
+export const guidesQuery = defineQuery(`
+  *[_type == "guide" && status != "archived"] | order(publishedAt desc) {
+    _id, title, slug, coverImage, excerpt, authorName, publishedAt, readingTime
+  }
+`);
+
+export const guideBySlugQuery = defineQuery(`
+  *[_type == "guide" && slug.current == $slug][0] {
+    _id, title, slug, coverImage, excerpt, authorName, publishedAt, readingTime,
+    downloadUrl, body,
+    ${SEO_FIELDS}
+  }
+`);

@@ -1,5 +1,4 @@
-import dynamic from 'next/dynamic';
 import {getPageMetadata} from '../../../sanity/lib/pageSeo';
-const IndustryRoutePage = dynamic(() => import('../../../components/legacy/IndustryRoutePage'), {ssr: false});
+import SolutionClient from '../SolutionClient';
 export async function generateMetadata() { return getPageMetadata('sol_outdoors'); }
-export default function Page() { return <IndustryRoutePage industryKey="outdoors-recreation" />; }
+export default function Page() { return <SolutionClient industryKey="outdoors-recreation" />; }

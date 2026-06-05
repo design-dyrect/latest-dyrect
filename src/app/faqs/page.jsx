@@ -1,5 +1,4 @@
-import dynamic from 'next/dynamic';
 import {getPageMetadata} from '../../sanity/lib/pageSeo';
-const FaqsLegacyPage = dynamic(() => import('../../components/legacy/FaqsLegacyPage'), {ssr: false});
+import FaqsClient from './FaqsClient';
 export async function generateMetadata() { return getPageMetadata('faqs'); }
-export default function FaqsPage() { return <FaqsLegacyPage />; }
+export default function FaqsPage() { return <FaqsClient />; }

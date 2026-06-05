@@ -1,5 +1,4 @@
-import dynamic from 'next/dynamic';
 import {getPageMetadata} from '../../../sanity/lib/pageSeo';
-const Page = dynamic(() => import('../../../components/legacy/ExtendedWarrantyLegacyPage'), {ssr: false});
+import EWClient from '../../extended-warranty-software/EWClient';
 export async function generateMetadata() { return getPageMetadata('extended_warranties'); }
-export default function ProductPage() { return <Page />; }
+export default function Page() { return <EWClient />; }

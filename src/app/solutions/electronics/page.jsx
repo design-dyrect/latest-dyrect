@@ -1,4 +1,5 @@
-'use client';
 import dynamic from 'next/dynamic';
-const ElectronicsIndustryLegacyPage = dynamic(() => import('../../../components/legacy/ElectronicsIndustryLegacyPage'), { ssr: false });
-export default function Page() { return <ElectronicsIndustryLegacyPage />; }
+import {getPageMetadata} from '../../../sanity/lib/pageSeo';
+const IndustryRoutePage = dynamic(() => import('../../../components/legacy/IndustryRoutePage'), {ssr: false});
+export async function generateMetadata() { return getPageMetadata('sol_electronics'); }
+export default function Page() { return <IndustryRoutePage industryKey="electronics" />; }

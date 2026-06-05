@@ -1,12 +1,5 @@
-/* eslint-disable react/no-children-prop */
-'use client';
-
 import dynamic from 'next/dynamic';
-
-const FeaturesLegacyPage = dynamic(() => import('../../components/legacy/FeaturesLegacyPage'), {
-  ssr: false,
-});
-
-export default function FeaturesPage() {
-  return <FeaturesLegacyPage />;
-}
+import {getPageMetadata} from '../../sanity/lib/pageSeo';
+const FeaturesLegacyPage = dynamic(() => import('../../components/legacy/FeaturesLegacyPage'), {ssr: false});
+export async function generateMetadata() { return getPageMetadata('features'); }
+export default function FeaturesPage() { return <FeaturesLegacyPage />; }

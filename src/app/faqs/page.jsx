@@ -1,10 +1,5 @@
-import FaqsLegacyPage from '../../components/legacy/FaqsLegacyPage';
-
-export const metadata = {
-  title: 'FAQs | Dyrect',
-  description: 'Frequently asked questions about Dyrect warranty management software.',
-};
-
-export default function FaqsRoute() {
-  return <FaqsLegacyPage />;
-}
+import dynamic from 'next/dynamic';
+import {getPageMetadata} from '../../sanity/lib/pageSeo';
+const FaqsLegacyPage = dynamic(() => import('../../components/legacy/FaqsLegacyPage'), {ssr: false});
+export async function generateMetadata() { return getPageMetadata('faqs'); }
+export default function FaqsPage() { return <FaqsLegacyPage />; }

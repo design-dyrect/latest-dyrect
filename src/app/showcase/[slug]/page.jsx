@@ -1,17 +1,14 @@
 import {notFound} from 'next/navigation';
 import {client} from '../../../sanity/lib/client';
 import {urlFor} from '../../../sanity/lib/image';
+import {buildMetadata} from '../../../sanity/lib/metadata';
 import {brandShowcaseBySlugQuery} from '../../../sanity/lib/queries';
 import RichText from '../../../components/cms/RichText';
 
 export async function generateMetadata({params}) {
   const {slug} = await params;
   const brand = await client.fetch(brandShowcaseBySlugQuery, {slug});
-  if (!brand) return {title: 'Brand Showcase | Dyrect'};
-  return {
-    title: brand.seoTitle || `${brand.brandName} | Dyrect Showcase`,
-    description: brand.seoDescription || brand.excerpt,
-  };
+  return buildMetadata(brand, {defaultTitle: 'Brand Showcase | Dyrect', path: `/showcase/${slug}`});
 }
 
 export default async function ShowcaseDetailPage({params}) {

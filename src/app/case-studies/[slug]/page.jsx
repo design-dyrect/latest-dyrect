@@ -1,17 +1,14 @@
 import {notFound} from 'next/navigation';
 import {client} from '../../../sanity/lib/client';
 import {urlFor} from '../../../sanity/lib/image';
+import {buildMetadata} from '../../../sanity/lib/metadata';
 import {caseStudyBySlugQuery} from '../../../sanity/lib/queries';
 import RichText from '../../../components/cms/RichText';
 
 export async function generateMetadata({params}) {
   const {slug} = await params;
   const cs = await client.fetch(caseStudyBySlugQuery, {slug});
-  if (!cs) return {title: 'Case Study | Dyrect'};
-  return {
-    title: cs.seoTitle || `${cs.customerName} Case Study | Dyrect`,
-    description: cs.seoDescription || cs.excerpt,
-  };
+  return buildMetadata(cs, {defaultTitle: 'Case Study | Dyrect', path: `/case-studies/${slug}`});
 }
 
 export default async function CaseStudyDetailPage({params}) {

@@ -1,5 +1,8 @@
 import {defineQuery} from 'next-sanity';
 
+// Shared SEO fragment — included in every detail query
+const SEO_FIELDS = `seoTitle, seoDescription, ogImage, canonicalUrl, noIndex, excludeFromSitemap`;
+
 // ─── Partners ────────────────────────────────────────────────────────────────
 
 export const partnersQuery = defineQuery(`
@@ -11,7 +14,8 @@ export const partnersQuery = defineQuery(`
 export const partnerBySlugQuery = defineQuery(`
   *[_type == "partner" && slug.current == $slug][0] {
     _id, title, slug, logo, websiteUrl, summary, about,
-    type, country, category, featured, seoTitle, seoDescription
+    type, country, category, featured,
+    ${SEO_FIELDS}
   }
 `);
 
@@ -31,7 +35,7 @@ export const caseStudyBySlugQuery = defineQuery(`
     excerpt, challenge, solution, results, metrics,
     quote, quoteAuthor, quoteRole, quoteAuthorImage,
     videoUrl, story,
-    seoTitle, seoDescription
+    ${SEO_FIELDS}
   }
 `);
 
@@ -50,7 +54,7 @@ export const brandShowcaseBySlugQuery = defineQuery(`
     industry, country, solutionUsed, showcaseUrl,
     excerpt, highlights, testimonialPersonName, testimonialPersonDesignation,
     websiteUrl, story,
-    seoTitle, seoDescription
+    ${SEO_FIELDS}
   }
 `);
 
@@ -66,6 +70,6 @@ export const integrationBySlugQuery = defineQuery(`
   *[_type == "integration" && slug.current == $slug][0] {
     _id, title, slug, logo, category, summary, details,
     websiteUrl, setupGuideUrl, availability, relatedProducts, featured,
-    seoTitle, seoDescription
+    ${SEO_FIELDS}
   }
 `);

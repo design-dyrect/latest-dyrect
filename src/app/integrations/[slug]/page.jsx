@@ -1,17 +1,14 @@
 import {notFound} from 'next/navigation';
 import {client} from '../../../sanity/lib/client';
 import {urlFor} from '../../../sanity/lib/image';
+import {buildMetadata} from '../../../sanity/lib/metadata';
 import {integrationBySlugQuery} from '../../../sanity/lib/queries';
 import RichText from '../../../components/cms/RichText';
 
 export async function generateMetadata({params}) {
   const {slug} = await params;
   const integration = await client.fetch(integrationBySlugQuery, {slug});
-  if (!integration) return {title: 'Integration | Dyrect'};
-  return {
-    title: integration.seoTitle || `${integration.title} Integration | Dyrect`,
-    description: integration.seoDescription || integration.summary,
-  };
+  return buildMetadata(integration, {defaultTitle: 'Integration | Dyrect', path: `/integrations/${slug}`});
 }
 
 const CATEGORY_LABELS = {

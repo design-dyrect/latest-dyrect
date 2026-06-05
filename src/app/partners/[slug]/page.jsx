@@ -1,6 +1,7 @@
 import {notFound} from 'next/navigation';
 import {client} from '../../../sanity/lib/client';
 import {urlFor} from '../../../sanity/lib/image';
+import {buildMetadata} from '../../../sanity/lib/metadata';
 import {partnerBySlugQuery} from '../../../sanity/lib/queries';
 import RichText from '../../../components/cms/RichText';
 
@@ -9,11 +10,10 @@ export const dynamic = 'force-dynamic';
 export async function generateMetadata({params}) {
   const {slug} = await params;
   const partner = await client.fetch(partnerBySlugQuery, {slug});
-  if (!partner) return {title: 'Partner | Dyrect'};
-  return {
-    title: partner.seoTitle || `${partner.title} | Dyrect Partner`,
-    description: partner.seoDescription || partner.summary,
-  };
+  return buildMetadata(partner, {
+    defaultTitle: 'Partner | Dyrect',
+    path: `/partners/${slug}`,
+  });
 }
 
 export default async function PartnerDetailPage({params}) {

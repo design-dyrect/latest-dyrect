@@ -160,24 +160,53 @@ export const richText = {
 };
 
 export const seoFields = [
+  // ── Title tag ─────────────────────────────────────────────────────────────
   defineField({
     name: 'seoTitle',
-    title: 'SEO Title',
+    title: 'Title Tag',
     type: 'string',
-    description: 'The title Google should show. Keep under 60 characters when possible.',
-    validation: (Rule) => Rule.max(70),
+    description: 'Shown in Google search results and browser tab. Ideal: 50–60 characters.',
+    validation: (Rule) => Rule.max(70).warning('Keep under 60 characters for best Google display.'),
+    group: 'seo',
+  }),
+  // ── Meta description ──────────────────────────────────────────────────────
+  defineField({
+    name: 'seoDescription',
+    title: 'Meta Description',
+    type: 'text',
+    rows: 3,
+    description: 'Shown under the title in Google results. Ideal: 150–160 characters.',
+    validation: (Rule) => Rule.max(180).warning('Keep under 160 characters for best display.'),
+    group: 'seo',
+  }),
+  // ── Open Graph / Social share ─────────────────────────────────────────────
+  {...imageWithAlt('ogImage', 'Social Share Image (OG Image)', 'Shown when shared on LinkedIn, Twitter/X, WhatsApp etc. Recommended: 1200×630px.'), group: 'seo'},
+  // ── Canonical URL ─────────────────────────────────────────────────────────
+  defineField({
+    name: 'canonicalUrl',
+    title: 'Canonical URL',
+    type: 'url',
+    description: 'Override the canonical URL. Leave blank to use the default page URL. Use only if this content is duplicated elsewhere.',
+    validation: (Rule) => Rule.uri({scheme: ['http', 'https']}),
+    group: 'seo',
+  }),
+  // ── Indexing controls ─────────────────────────────────────────────────────
+  defineField({
+    name: 'noIndex',
+    title: 'Hide from search engines (noindex)',
+    type: 'boolean',
+    description: 'When ON, this page will not appear in Google or other search engines.',
+    initialValue: false,
     group: 'seo',
   }),
   defineField({
-    name: 'seoDescription',
-    title: 'SEO Description',
-    type: 'text',
-    rows: 3,
-    description: 'The short Google description. Keep around 150-160 characters.',
-    validation: (Rule) => Rule.max(180),
+    name: 'excludeFromSitemap',
+    title: 'Exclude from sitemap',
+    type: 'boolean',
+    description: 'When ON, this page is removed from the XML sitemap.',
+    initialValue: false,
     group: 'seo',
   }),
-  {...imageWithAlt('ogImage', 'Social Share Image', 'Image for LinkedIn, Twitter, and social previews.'), group: 'seo'},
 ];
 
 export const ctaFields = [
